@@ -268,7 +268,7 @@ A `for` statement.
 ```js
 interface ForInStatement <: Statement {
     type: "ForInStatement";
-    left: VariableDeclaration |  Expression;
+    left: VariableDeclaration | Pattern | MemberExpression;
     right: Expression;
     body: Statement;
 }
